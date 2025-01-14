@@ -1,9 +1,0 @@
-{
-  "id": 1,
-  "href": "/api/v2/messages/1",
-  "type": "message",
-  "sessionId": 1,
-  "bulkId": null,
-  "messageId": 1,
-  "scheduleId": null
-}
