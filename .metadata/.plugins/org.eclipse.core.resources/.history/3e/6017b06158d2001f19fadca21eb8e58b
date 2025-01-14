@@ -1,0 +1,27 @@
+package com.security.login_security;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.web.authentication.AbstractAuthenticationTargetUrlRequestHandler;
+import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler;
+
+
+
+@SpringBootApplication
+public class LoginSecurityApplication extends SpringBootServletInitializer {
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+        return builder.sources(LoginSecurityApplication.class);
+    }
+    public static void main(String[] args) {
+        SpringApplication sa = new SpringApplication(
+        		LoginSecurityApplication.class);
+        sa.run(args);
+
+}
+    }
